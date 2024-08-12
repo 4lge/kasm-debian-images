@@ -2,7 +2,7 @@
 set -ex
 
 # Install RStudio
-ARCH=$(arch | sed 's/aarch64/arm64/g' | sed 's/x86_64/x64/g')
+ARCH=$(arch | sed 's/aarch64/arm64/g' | sed 's/x86_64/amd64/g')
 if [ "${ARCH}" -ne "amd64" ]; then
   echo "only amd64 in debian/ubuntu supported"
   exit 1
