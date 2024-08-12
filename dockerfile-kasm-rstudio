@@ -11,7 +11,7 @@ WORKDIR $HOME
 
 ######### Customize Container Here ###########
 
-COPY ./src/ubuntu/install/vs_code $INST_SCRIPTS/vs_code/
+COPY ./src/ubuntu/install/rstudio $INST_SCRIPTS/rstudio/
 RUN bash $INST_SCRIPTS/rstudio/install_rstudio.sh  && rm -rf $INST_SCRIPTS/rstudio/
 
 COPY ./src/ubuntu/install/rstudio/custom_startup.sh $STARTUPDIR/custom_startup.sh
