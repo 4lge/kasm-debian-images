@@ -2,7 +2,7 @@
 set -ex
 
 # Install RStudio
-wget -q https://download1.rstudio.org/electron/jammy/amd64/rstudio-2024.04.2-764-amd64.deb -O rstudio-2024.04.2-764-amd64.deb
+wget -q https://download1.rstudio.org/electron/focal/amd64/rstudio-2024.04.2-764-amd64.deb -O rstudio-2024.04.2-764-amd64.deb
 apt-get update
 apt-get install -y ./rstudio-2024.04.2-764-amd64.deb
 # install quarto
