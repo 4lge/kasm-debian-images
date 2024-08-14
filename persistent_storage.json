@@ -1,0 +1,22 @@
+/mnt/kasm_profiles/debian/{username}
+
+
+{
+  "/mnt/kasm_profiles/debian/{user_id}": {
+    "bind": "/profiles",
+    "mode": "rw",
+    "uid": 1000,
+    "gid": 1000,
+    "required": true,
+    "skip_check": false
+  },
+  "/mnt/kasm_user_share/{image_id}/{user_id}": {
+    "bind": "/share/{username}",
+    "mode": "rw",
+    "uid": 1000,
+    "gid": 1000,
+    "required": true,
+    "skip_check": false
+  }
+}
+
