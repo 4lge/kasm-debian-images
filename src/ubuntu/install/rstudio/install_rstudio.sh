@@ -12,7 +12,7 @@ apt-get install -y ./quarto-1.5.56-linux-amd64.deb
 apt-get install --no-install-recommends software-properties-common dirmngr
 wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
 add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
-apt-get install -y --install-recommends r-base-dev
+apt-get install -y --install-recommends r-base-dev cmake
 
 
 # Cleanup for app layer
