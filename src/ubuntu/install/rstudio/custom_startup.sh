@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -ex
-START_COMMAND="code"
+START_COMMAND="rstudio"
 PGREP="code"
 export MAXIMIZE="true"
 export MAXIMIZE_NAME="RStudio"
